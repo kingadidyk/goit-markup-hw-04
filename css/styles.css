@@ -11,6 +11,7 @@
   --background5-color: #2196F3;
   --border-color: #ECECEC;
   --border2-color: #EEEEEE;
+  --border3: #AFB1B8;
 }
 
 
@@ -27,6 +28,7 @@ ul {
 
 figure {
   margin: 0 auto;
+  padding: 0;
 }
 
 h1 {
@@ -146,12 +148,17 @@ img {
   color: var(--text-color);
 }
 
+.contact .contact-color:focus {
+  color: var(--text2-color);
+}
+
 .link { 
   color: var(--text3-color);
   text-decoration: none;
 }
 
-.link:hover {
+.link:hover 
+.link:focus {
   color: var(--text2-color);
 }
 
@@ -511,6 +518,14 @@ border-radius: 0px 0px 4px 4px;
   fill: var(--text2-color);
 }
 
+.contact-color:focus .envelope {
+  fill: var(--text2-color);
+}
+
+.contact-color:focus .smartphone {
+  fill: var(--text2-color);
+}
+
 .lorem-svg{
   display: flex;
   justify-content: space-around;
@@ -571,10 +586,13 @@ display: flex;
 justify-content: space-between;
 }
 
+.our-client-border {
+  border: 1px solid var(--border3);
+  border-radius: 4px;
+}
+
 .logo-list {
   fill: var(--text-color);
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -586,3 +604,10 @@ justify-content: space-between;
   border-color: var(--background5-color);
 }
 
+.our-client-border:hover,
+.our-client-border:focus,
+.our-client-border:hover svg,
+.our-client-border:focus svg {
+  fill: var(--text2-color);
+  border-color: var(--background5-color);
+}
