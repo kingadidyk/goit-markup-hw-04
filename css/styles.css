@@ -190,7 +190,7 @@ img {
 
 .footnote-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   padding: 55.5px 0;
 }
@@ -202,6 +202,11 @@ img {
 
 .footnote .contact-color {
   color: var(--text5-color);
+}
+
+.logo-address-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .address-box {
@@ -222,22 +227,19 @@ img {
 }
 
 .join-us-box {
-  display: block;
   margin-top: 12px;
 }
 
 .join-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: var(--text4-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: start;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .sm-footer-box {
@@ -246,6 +248,7 @@ img {
   align-items: center;
   gap: 10px;
   fill: var(--text4-color);
+  margin-left: 70px;
 }
 
 .sm-footer {
@@ -280,7 +283,6 @@ img {
 .main-button {
   background-color: var(--background5-color);
   color: var(--text4-color);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -522,7 +524,11 @@ img {
   margin-right: 10px;
 }
 
-.contact:hover svg {
+.contact-color:hover .envelope {
+  fill: var(--text2-color);
+}
+
+.contact-color:hover .smartphone {
   fill: var(--text2-color);
 }
 
