@@ -130,7 +130,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   margin-left: 345px;
 }
 
@@ -262,10 +262,10 @@ img {
   color: var(--text4-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 0 252px 0 252px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .box {
@@ -377,7 +377,6 @@ img {
   line-height: 1.18;
   font-weight: 400px;
   letter-spacing: 0.03em;
-  padding: 0px 24px 20px 24px;
   margin: 0;
   margin-bottom: 16px;
 }
@@ -514,6 +513,7 @@ img {
 
 .envelope {
   fill: var(--text-color);
+  gap: 10px;
   margin-right: 10px;
 }
 
